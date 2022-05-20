@@ -10,6 +10,7 @@ const scaleNames = {
   f: 'Fahrenheit'
 };
 
+//결국에 부모 컴포넌트 calc로부터 prop을 받아온다 이말이야
 function BoilingVerdict(props) {
   if(props.celsius >= 100) {
     return <p>딱!! 끓여집니다.</p>;
@@ -39,7 +40,7 @@ function tryConvert(temperature, convert) {
 class TemperatureInput extends React.Component {
   constructor(props) {
     super(props);
-    // this.state ={temperature: ''};
+    // this.state ={temperature: ''}; 상속받았으니까 빼주자
 
     this.handleChange = this.handleChange.bind(this);
   }
@@ -64,7 +65,7 @@ class TemperatureInput extends React.Component {
   }
 }
 
-
+//렌더링 과정은 부모 컴포넌트 먼저 렌더 메서드 호출
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
