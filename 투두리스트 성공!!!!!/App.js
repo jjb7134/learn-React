@@ -5,7 +5,8 @@ import Showlist from './components/Showlist';
 import ShowValue from './components/ShowValue';
 
 const App=(props) => {
-  const [list, setList] = useState('');
+  // useState([]) 배열로 해줘야되는구나....
+  const [list, setList] = useState([]);
 
   const addValue = (newList)=>{
     // 여기에 누적시키는 작업 해줘야지

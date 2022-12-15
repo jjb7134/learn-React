@@ -6,9 +6,17 @@ function Showlist(props) {
       {/* {props.lists.map((lists)=>(
         <li>{lists.list}</li>
       ))} */}
-      {props.lists.map((list) => (
+      {/* {props.lists.map((list) => (
         <li>{list}</li>
-      ))}
+      ))} */}
+      {/* {<ul>{props.lists.map((new) => (
+        <li>{new}</li>
+      ))}</ul>} */}
+      <ul>
+        {props.lists.map((list) =>
+        <li>{list}</li>
+        )}
+      </ul>
     </div>
   )
 }
